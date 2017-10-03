@@ -13,10 +13,9 @@ function getRandomArbitrary(min, max) {
   return Math.random() * (max - min) + min;
 }
 
-var randomnumber = getRandomArbitrary(2, 100);
 
 function addToCart(item) {
-  Object.assign({}, { [item]: `${randomnumber}` });
+  Object.assign({}, { [item]: `${getRandomArbitrary(1,100)}` });
   console.log(`${item} has been added to your cart.`)
 return cart
 }
