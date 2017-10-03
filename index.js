@@ -18,7 +18,7 @@ function getRandomIntInclusive(min, max) {
 var randomnumber = getRandomIntInclusive(1, 100);
 
 function addToCart(item) {
-  object.assign({}, { [item]: `${randomnumber}` })
+  Object.assign({}, { [item]: `${randomnumber}` })
   console.log(`${item} has been added to your cart.`)
 return cart
 }
