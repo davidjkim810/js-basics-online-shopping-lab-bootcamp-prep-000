@@ -9,13 +9,11 @@ function setCart(c) {
   return cart;
 }
 
-function getRandomIntInclusive(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive
+function getRandomArbitrary(min, max) {
+  return Math.random() * (max - min) + min;
 }
 
-var randomnumber = getRandomIntInclusive(1, 100);
+var randomnumber = getRandomArbitrary(1, 100);
 
 function addToCart(item) {
   Object.assign({}, { [item]: `${randomnumber}` });
