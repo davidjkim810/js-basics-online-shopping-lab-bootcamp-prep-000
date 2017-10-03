@@ -13,7 +13,7 @@ function getRandomArbitrary(min, max) {
   return Math.random() * (max - min) + min;
 }
 
-var randomnumber = getRandomArbitrary(1, 100);
+var randomnumber = getRandomArbitrary(2, 100);
 
 function addToCart(item) {
   Object.assign({}, { [item]: `${randomnumber}` });
