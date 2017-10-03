@@ -15,7 +15,7 @@ function getRandomArbitrary(min, max) {
 
 
 function addToCart(item) {
-  Object.assign({}, { [item]: `${getRandomArbitrary(1,100)}` });
+  Object.assign({}, { [item]: `${getRandomArbitrary(0,100)}` });
   console.log(`${item} has been added to your cart.`)
 return cart
 }
